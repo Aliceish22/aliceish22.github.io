@@ -1,0 +1,79 @@
+/* CSS DOCUMENT*/
+img {
+width: 100%;}
+
+div.container {
+    max-width:50em;
+    margin: auto;
+}
+
+div.ingredients {
+    background-color: rgb(211,189,148, 0.25);
+    width: 35%;
+    float:left; 
+    margin: 1em 1em 1em 0em;
+}
+
+div.directions {
+    background-color: rgb(211,189,148, 0.25);
+    width: 61%;
+    float:left;
+    margin: 1em 0em 1em 1em;
+}
+
+h1 {
+    font-family: nueva-std, serif;
+    font-size: 2.8em; 
+    Color: rgb(188,50,8);
+    width: 100%;
+    margin-bottom: 0.25em;
+    text-align: center;
+    
+}
+
+h2 {
+    font-family:sans-serif;
+    font-size: 1.3em; 
+    text-transform: uppercase;
+    Color: rgb(0,0,0);
+    margin: 0em 1em 1em 1em;
+    text-align: center;
+    
+}
+
+h3 {
+    font-family:serif;
+    font-size: 1.2em; 
+    text-transform: uppercase;
+    Color: rgb(188,50,8);
+    margin: 1em 1em 0em 1em;
+    text-align: center;
+    
+}
+
+h6 {
+    font-family:serif;
+    font-size: 1em; 
+    Color: rgb(0,0,0);
+    margin: 1em 1em 0em 1em;
+    text-align: center;
+}
+
+li {
+    font-family:serif;
+    font-size: 1em; 
+    Color: rgb(0,0,0);
+    margin: 1em 1em 0em 1em;
+    text-align: left;
+    
+}
+
+p {
+    font-family:serif;
+    font-size: 1em; 
+    Color: rgb(0,0,0);
+    background-color: rgb(211,189,148,0.25);
+    padding: 1em 2em 1em 2em;
+    margin: 0.25em 0em 1em 0em;
+    
+}
