@@ -1,0 +1,62 @@
+/* CSS DOCUMENT*/
+
+div.container {
+    max-width:50em;
+    margin: auto;
+}
+img {
+width: 100%;
+}
+
+h1 {
+    width: 6em;
+    float: left;
+}
+h2 {
+    font-family:serif;
+    font-size: 1.5em; 
+    Color: rgb(15,15,15);
+    margin: 1em 1em 0.5em 1em;
+    padding-top: 4em; 
+    text-align: center;
+}
+
+h3 {
+    font-family:sans-serif;
+    font-size: 1em; 
+    text-transform: uppercase;
+    Color: rgb(168,79,122);
+    margin: 1em 1em 0.5em 1em; 
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(168,79,122);   
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 1.2em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+nav ul {
+    padding: 0;
+}
+
+nav {
+    float:right;
+    padding-top: 1em;
+}
+
+li {
+    list-style-type: none;
+}
+
+div.intro {
+    text-align: center; 
+    font-size: 1.5em;
+    font-family: sans-serif;
+    Color: rgb(168,79,122);
+}
