@@ -1,0 +1,91 @@
+/* CSS DOCUMENT*/
+
+div.container {
+    max-width:50em;
+    margin: auto;
+}
+img {
+width: 100%;
+}
+
+h1 {
+    width: 4em;
+    float: left;
+}
+h2{
+    font-family:serif;
+    font-size: 1.5em; 
+    Color: rgb(15,15,15);
+    margin: 1em 1em 0.5em 1em;
+    padding-top: 4em; 
+    text-align: center;
+}
+
+h3 {
+    font-family:sans-serif;
+    font-size: 1em; 
+    text-transform: uppercase;
+    Color: rgb(168,79,122);
+    margin: 1em 1em 0.5em 0em; 
+
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: rgb(168,79,122);   
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 1.2em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+nav ul {
+    padding: 0;
+}
+
+nav {
+    float:right;
+    padding-top: 1em;
+}
+
+ul { 
+    padding:0;
+}
+li {
+    list-style-type: none;
+}
+
+div.intro {
+    text-align: center; 
+    font-size: 1.3em;
+    font-family:serif;
+    color: rgb(15,15,15);
+    padding-top: 5em;
+}
+
+div.about, div.location {
+    padding: 1em 1.5em 2em 1.5em;
+    max-width: 36em;
+    margin:auto;
+}
+
+div.menusection {
+    max-width:25em;
+    margin: 0em auto;
+}
+
+
+@media only screen and (min-width: 36em) {
+    div.menusection {
+        width:31%;
+        float:left;
+        margin: 0em 1%;
+        
+    }
+    h1 {
+        width:6em;
+    }
+}
+
