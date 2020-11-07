@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  color: rgb(243, 74, 33);
+}
+header {
+  display: grid;
+  grid-template-columns: 20em auto;
+  width: 100%;
+  clear: both;
+  margin: auto;
+  padding: 0 2em;
+}
+
+h1:first-child {
+  margin-top:1em;
+  font-size: 2em;
+  font-family: 'vortice-concept', sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(243, 74, 33);
+}
+nav{
+  padding-top:1em;
+  z-index:100;
+  /* Z-index added to layer the nav menu over the body content of the page*/
+}
+nav ul li {
+  list-style: none;
+  margin: 0;
+  display: inline;
+}
+
+nav ul li a {
+  padding: 1em;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  font-family: 'Pt sans', sans-serif;
+  text-transform: uppercase;
+  font-size:1.5em;
+  text-align: center;
+}
+
+nav > ul {
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  /* text-align right add so that the nav stays with the right side of the page as the window resizes*/
+}
+
+nav a {
+  display: block;
+}
+
+.burger {
+  font-size: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+  /*pointer tells user that element is clickable*/
+}
+.burger {
+  display: none;
+  /* The .burger needed to be set to display:none because it was still showing on the desktop view*/
+}
+
+main ul, main li {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+main ul{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1em;
+  text-align:center;
+  /*set to 4 columns so all elements show in one line*/
+}
+
+main li {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; 
+  /*width set to size the images and bring them in from the edge of the page*/
+}
+img{
+  width:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*width of image 100% so it fills the whole list element*/
+}
+
+h2{
+  Text-align:center;
+  background:white;
+  color:rgb(169,164,170);
+  font-family: 'Pt sans', sans-serif;
+  Padding: 0.5em 0.5em 0.5em 0.5em
+}
+h3{
+  Text-align:center;
+  /*background:white;*/
+  color:rgb(243,74,33);
+  font-family: 'Pt sans', sans-serif;
+  Padding: 0.5em 0.5em 0.5em 0.5em
+}
+h4{
+  Text-align:center;
+  /*background:white;*/
+  color:rgb(243, 74, 33);
+  font-family: 'Pt sans', sans-serif;
+  Padding: 0.5em 0.5em 0.5em 0.5em
+}
+p{
+  color:rgb(243,74,33);
+  font-family: 'Pt sans', sans-serif;
+}
+
+.socials{
+  Text-align:center;
+  font-family:'Pt sans', sans-serif;
+  color:white;
+  background:rgb(243, 74, 33);
+  font-size:1.5em;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+@media (max-width:1100px) {
+  main ul{
+  grid-template-columns: repeat(2, 1fr);
+    /* columns per row changed to 2 to resize for tablets and smallers screen sizes*/
+}
+@media (max-width: 900px) {
+  .burger {
+    display:block;
+    position: absolute;
+    top:0;
+    right: 0;
+    /* I chose for the nav to reflow at a screen size of 900px because that is the average size of a tablet and it works better with how the nav flows*/
+  }
+  .burger .hide{
+    display:none;
+    /* By setting the .burger .hide display to none the cookie with the bite is hidden until the click triggers the .toggleClass*/
+  }
+  nav{
+    margin-right: 2em;
+    /* margin added so the nav menu comes down next to the x icon without overlap*/
+  }
+  
+   nav .show{
+    margin-top:5em;
+    margin-right:4em;
+    /* When the nav is down I tried to give it a margin so it doesn't come in too close to the cookie icon*/
+  }
+  nav ul li{
+    text-align:right;
+    padding:1em;
+    background:#fff;
+    display:block;
+    /* I added text-align:right to move the nav list over to the cookie icon*/ 
+  }
+  nav a {
+    line-height: 3em;
+    /* Made the line-height:2.5em to give each nav block room to breath but to not feel too spread out*/
+  }
+  nav a:hover {
+    background: #ccc;
+  }
+  nav ul.hide {
+    margin-top: -500px;
+    /*margin-top added so that the nav is completely hidden when the hide is applied*/
+  }
+  nav ul {
+    transition:1s ease all;
+    display: block;
+    /* tested out different transition speeds but decided the 1s you chose did look the best*/
+  }
+  main ul {
+    display:block;
+    /* Display in block so the elements stack for mobile*/
+  }
+  main li {
+    margin-bottom: 1em;
+    /* Creates space between elements when they stack*/
+  }
+  h1:first-child{
+    font-size: 1.5em;
+  }
+}
+/* Citations: Icons from Fontawesome.com
+  Image by Ben Kolde on Unsplash
+  Tutorial used for images:CSS Styling images on w3schools.com
+  */
+
+}
